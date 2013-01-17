@@ -38,7 +38,7 @@
   highlight-parentheses-mode
   (lambda ()
     (highlight-parentheses-mode t)))
-(custom-set-variables '(hl-paren-colors (quote ("orange" "yellow" "greenyellow" 
+(custom-set-variables '(hl-paren-colors (quote ("orange" "yellow" "greenyellow"
                                                 "green" "springgreen" "cyan"
                                                 "slateblue" "magenta" "purple"))))
 (add-hook 'clojure-mode-hook 'highlight-parentheses-mode)
@@ -50,13 +50,6 @@
 
 ;; rainbow delimiters
 ;; (global-rainbow-delimiters-mode)
-
-;; Set color-theme
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initialize)
-     (color-theme-charcoal-black)))
 
 ;; nrepl
 (setenv "PATH" (concat (getenv "HOME") "/bin:" (getenv "PATH")))
@@ -77,6 +70,14 @@
 (ac-config-default)
 
 ;; APPEARENCE
+
+;; Set color-theme
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (color-theme-charcoal-black)))
+
 (set-face-attribute 'default nil :height 130)
 (set-cursor-color 'white)
 
@@ -90,4 +91,3 @@
 (setq whitespace-line-column 90)
 (setq whitespace-style '(face empty tabs lines-tail trailing))
 (global-whitespace-mode t)
-
