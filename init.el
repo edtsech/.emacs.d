@@ -17,12 +17,10 @@
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-;; Switch off toolbar
-(tool-bar-mode 0)
-
 ;; PLUGINS
 
 ;; evil-mode
+(require 'evil-paredit)
 (evil-mode 1)
 (setq evil-default-cursor t)
 
