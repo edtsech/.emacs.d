@@ -38,10 +38,10 @@
   highlight-parentheses-mode
   (lambda ()
     (highlight-parentheses-mode t)))
-(global-highlight-parentheses-mode t)
 (custom-set-variables '(hl-paren-colors (quote ("orange" "yellow" "greenyellow" 
                                                 "green" "springgreen" "cyan"
                                                 "slateblue" "magenta" "purple"))))
+(add-hook 'clojure-mode-hook 'highlight-parentheses-mode)
 
 ;; midje-mode
 (require 'midje-mode)
@@ -65,6 +65,10 @@
 (setq nrepl-popup-stacktraces nil)
 (add-to-list 'same-window-buffer-names "*nrepl*")
 (add-hook 'nrepl-mode-hook 'paredit-mode)
+
+;; Auto complete
+(require 'auto-complete-config)
+(ac-config-default)
 
 ;; APPEARENCE
 (set-face-attribute 'default nil :height 130)
