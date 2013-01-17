@@ -70,6 +70,12 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+;; Linum relative
+(require 'linum-relative)
+(set-face-foreground 'linum-relative-current-face nil)
+(set-face-background 'linum-relative-current-face nil)
+(ac-config-default)
+
 ;; APPEARENCE
 (set-face-attribute 'default nil :height 130)
 (set-cursor-color 'white)
