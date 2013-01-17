@@ -39,8 +39,9 @@
   (lambda ()
     (highlight-parentheses-mode t)))
 (global-highlight-parentheses-mode t)
-(custom-set-variables '(hl-paren-colors (quote ("gold" "#0099FF" "#00FF00" "orange red" "dark magenta" "DarkOrchid1" "white"))))
-
+(custom-set-variables '(hl-paren-colors (quote ("orange" "yellow" "greenyellow" 
+                                                "green" "springgreen" "cyan"
+                                                "slateblue" "magenta" "purple"))))
 
 ;; midje-mode
 (require 'midje-mode)
@@ -57,6 +58,14 @@
      (color-theme-initialize)
      (color-theme-charcoal-black)))
 
+;; nrepl
+(setenv "PATH" (concat (getenv "HOME") "/bin:" (getenv "PATH")))
+(setq exec-path (cons "~/bin" exec-path))
+(add-hook 'nrepl-interaction-mode-hook 'nrepl-turn-on-eldoc-mode)
+(setq nrepl-popup-stacktraces nil)
+(add-to-list 'same-window-buffer-names "*nrepl*")
+(add-hook 'nrepl-mode-hook 'paredit-mode)
+
 ;; APPEARENCE
 (set-face-attribute 'default nil :height 130)
 (set-cursor-color 'white)
@@ -66,7 +75,6 @@
 (setq-default truncate-lines t)
 
 ;; WHITESPACES
-(setq-default show-trailing-whitespace t)
 (require 'whitespace)
 (add-hook 'after-save-hook 'whitespace-cleanup)
 (setq whitespace-line-column 90)
