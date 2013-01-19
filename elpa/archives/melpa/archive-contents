@@ -99,7 +99,7 @@
 	    [(20121013 1846)
 	     nil "Emacs WebSocket client and server [source: github]" single])
  (web-mode .
-	   [(20130116 2148)
+	   [(20130118 2048)
 	    nil "major mode for editing HTML templates [source: github]" single])
  (wc-mode .
 	  [(20120531 1344)
@@ -1531,7 +1531,7 @@
 	   (1 2)))
 	 "Emacs client for hastebin (http://hastebin.com/about.md) [source: github]" single])
  (haskell-mode .
-	       [(20130115 1401)
+	       [(20130118 2049)
 		nil "A Haskell editing mode [source: github]" tar])
  (hardhat .
 	  [(20121126 1228)

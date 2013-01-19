@@ -10,7 +10,11 @@
  '(inhibit-startup-screen t)
  '(initial-scratch-message nil)
  '(tool-bar-mode nil)
- '(scroll-bar-mode nil))
+ '(scroll-bar-mode nil)
+ '(linum-format (quote "%3d"))
+ )
+
+(global-linum-mode t)
 
 ;; Package.el customization
 (package-initialize)
@@ -20,7 +24,10 @@
 ;; PLUGINS
 
 ;; evil-mode
+(require 'evil)
 (require 'evil-paredit)
+(add-hook 'evil-insert-state-entry-hook 'linum-relative-toggle)
+(add-hook 'evil-insert-state-exit-hook 'linum-relative-toggle)
 (evil-mode 1)
 (setq evil-default-cursor t)
 
