@@ -10,9 +10,7 @@
  '(inhibit-startup-screen t)
  '(initial-scratch-message nil)
  '(tool-bar-mode nil)
- '(scroll-bar-mode nil)
- '(linum-format (quote "%3d"))
- )
+ '(scroll-bar-mode nil))
 
 (global-linum-mode t)
 
@@ -26,8 +24,8 @@
 ;; evil-mode
 (require 'evil)
 (require 'evil-paredit)
-(add-hook 'evil-insert-state-entry-hook 'linum-relative-toggle)
-(add-hook 'evil-insert-state-exit-hook 'linum-relative-toggle)
+;(add-hook 'evil-insert-state-entry-hook 'linum-relative-toggle)
+;(add-hook 'evil-insert-state-exit-hook 'linum-relative-toggle)
 (evil-mode 1)
 (setq evil-default-cursor t)
 
@@ -83,7 +81,8 @@
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
-     (color-theme-charcoal-black)))
+     ;(color-theme-charcoal-black)
+     (color-theme-sanityinc-tomorrow-day)))
 
 (set-face-attribute 'default nil :height 130)
 (set-cursor-color 'white)
