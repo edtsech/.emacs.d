@@ -14,6 +14,14 @@
 
 (global-linum-mode t)
 
+;; Fix the PATH variable
+(defun set-exec-path-from-shell-PATH ()
+  (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
+    (setenv "PATH" path-from-shell)
+    (setq exec-path (split-string path-from-shell path-separator))))
+
+(when window-system (set-exec-path-from-shell-PATH))
+
 ;; Package.el customization
 (package-initialize)
 (add-to-list 'package-archives
@@ -28,10 +36,6 @@
 ;(add-hook 'evil-insert-state-exit-hook 'linum-relative-toggle)
 (evil-mode 1)
 (setq evil-default-cursor t)
-
-;; SML-mode
-(setenv "PATH" (concat "/usr/local/Cellar/smlnj/110.75/libexec/bin:" (getenv "PATH")))
-(setq exec-path (cons "/usr/local/Cellar/smlnj/110.75/libexec/bin" exec-path))
 
 ;; paredit
 (add-hook 'clojure-mode-hook 'paredit-mode)
@@ -57,8 +61,6 @@
 ;; (global-rainbow-delimiters-mode)
 
 ;; nrepl
-(setenv "PATH" (concat (getenv "HOME") "/bin:" (getenv "PATH")))
-(setq exec-path (cons "~/bin" exec-path))
 (add-hook 'nrepl-interaction-mode-hook 'nrepl-turn-on-eldoc-mode)
 (setq nrepl-popup-stacktraces nil)
 (add-to-list 'same-window-buffer-names "*nrepl*")
@@ -82,7 +84,9 @@
   '(progn
      (color-theme-initialize)
      ;(color-theme-charcoal-black)
-     (color-theme-sanityinc-tomorrow-day)))
+     ;(color-theme-sanityinc-tomorrow-day)
+     (color-theme-sanityinc-tomorrow-eighties)
+     ))
 
 (set-face-attribute 'default nil :height 130)
 (set-cursor-color 'white)
