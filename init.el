@@ -61,20 +61,25 @@
 ;; (global-rainbow-delimiters-mode)
 
 ;; nrepl
+(setenv "PATH" (concat (getenv "HOME") "/bin:" (getenv "PATH")))
+(setq exec-path (cons "~/bin" exec-path))
 (add-hook 'nrepl-interaction-mode-hook 'nrepl-turn-on-eldoc-mode)
 (setq nrepl-popup-stacktraces nil)
 (add-to-list 'same-window-buffer-names "*nrepl*")
 (add-hook 'nrepl-mode-hook 'paredit-mode)
 
 ;; Auto complete
-(require 'auto-complete-config)
-(ac-config-default)
+;; (require 'auto-complete-config)
+;; (ac-config-default)
+
+;; Super Tab
+(require 'smart-tab)
+(global-smart-tab-mode 1)
 
 ;; Linum relative
 (require 'linum-relative)
 (set-face-foreground 'linum-relative-current-face nil)
 (set-face-background 'linum-relative-current-face nil)
-(ac-config-default)
 
 ;; APPEARENCE
 
