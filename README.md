@@ -16,7 +16,8 @@ and ready to try Emacs as an editor primarelly for Clojure development or just t
 
 ## Installation
 
-1. Download Carbon Emacs
+1. Download Emacs
+  1. [Emacs for MacOS](http://emacsformacosx.com/)
 2. `git clone ... ~/.emacs.d`
 
 ## Usage
@@ -24,17 +25,21 @@ and ready to try Emacs as an editor primarelly for Clojure development or just t
 ### Emacs basics
 
 `C-x C-f` - "find" file i.e. open/create a file in buffer
-`C-x b` - create/switch buffers
+`C-x b`   - create/switch buffers
 `C-x C-b` - show buffer list
-`C-x k` - kill buffer
-`C-x 2` - create horizontal "split"
-`C-x 3` - create vertical "split"
+`C-x k`   - kill buffer
+`C-x 2`   - create horizontal "split"
+`C-x 3`   - create vertical "split"
+
+[Full Emacs Command List](http://cse.unl.edu/~choueiry/S08-476-876/Documents/emacs_ref.html)
 
 ### Plugins
 
 #### Paredit
 
-1. `C-<right>`
-2. `C-<left>`
+1. `C-<right>` (def) a -> (def a)
+2. `C-<left>`  (def a) -> (def) a
+
+[Paredit Cheetsheet](http://www.emacswiki.org/emacs/PareditCheatsheet)
 
 ### Customization ??
