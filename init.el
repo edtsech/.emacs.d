@@ -63,13 +63,9 @@
 (add-to-list 'same-window-buffer-names "*nrepl*")
 (add-hook 'nrepl-mode-hook 'paredit-mode)
 
-;; Auto complete
-;; (require 'auto-complete-config)
-;; (ac-config-default)
-
 ;; Super Tab
-;; (require 'smart-tab)
-;; (global-smart-tab-mode 1)
+(require 'smart-tab)
+(global-smart-tab-mode 1)
 
 ;; Relative line numbers
 ;; (require 'linum-relative)

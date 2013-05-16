@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (pluralize-string singularize-string) "inflections"
-;;;;;;  "inflections.el" (20729 38814))
+;;;;;;  "inflections.el" (20884 30343))
 ;;; Generated autoloads from inflections.el
 
 (autoload 'singularize-string "inflections" "\
@@ -19,7 +19,7 @@
 
 ;;;***
 
-;;;### (autoloads nil nil ("inflections-pkg.el") (20729 38814 934992))
+;;;### (autoloads nil nil ("inflections-pkg.el") (20884 30343 170673))
 
 ;;;***
 
