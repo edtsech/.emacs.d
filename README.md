@@ -50,4 +50,10 @@ and ready to try Emacs as an editor primarelly for Clojure development or just t
 
 [Paredit Cheetsheet](http://www.emacswiki.org/emacs/PareditCheatsheet)
 
+#### Auto completion
+
+Just use `tab` key.
+
+#### NREPL
+
 ### Customization ??
