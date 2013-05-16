@@ -104,9 +104,9 @@
 (eval-after-load "color-theme"
   '(progn
      ;(color-theme-initialize)
-     (color-theme-charcoal-black)
+     ;(color-theme-charcoal-black)
      ;(color-theme-sanityinc-tomorrow-day)
-     ;(color-theme-sanityinc-tomorrow-eighties)
+     (color-theme-sanityinc-tomorrow-eighties)
      ))
 
 (set-face-attribute 'default nil :height 130)
