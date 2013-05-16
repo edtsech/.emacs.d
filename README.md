@@ -3,6 +3,8 @@
 It's basic ~100 lines setup for non Emacs users who don't have productive Clojure environment yet
 and ready to try Emacs as an editor primarelly for Clojure development or just thinkering.
 
+![look](/image.png)
+
 ## Features
 
 * Paredit
@@ -24,12 +26,13 @@ and ready to try Emacs as an editor primarelly for Clojure development or just t
 
 ### Emacs basics
 
-`C-x C-f` - "find" file i.e. open/create a file in buffer
-`C-x b`   - create/switch buffers
-`C-x C-b` - show buffer list
-`C-x k`   - kill buffer
-`C-x 2`   - create horizontal "split"
-`C-x 3`   - create vertical "split"
+* `C-x C-f` - "find" file i.e. open/create a file in buffer
+* `C-x b`   - create/switch buffers
+* `C-x C-b` - show buffer list
+* `C-x k`   - kill buffer
+* `C-x 2`   - split window horizontally
+* `C-x 3`   - split window vertically
+* `C-x 0`   - close current window(split)
 
 [Full Emacs Command List](http://cse.unl.edu/~choueiry/S08-476-876/Documents/emacs_ref.html)
 
