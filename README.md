@@ -7,14 +7,19 @@ and ready to try Emacs as an editor primarelly for Clojure development or just t
 
 ## Features
 
+### Active
+
 * Paredit
 * Parentheses highlighting
 * NREPL
 * Auto Completion
-* Line numbers (optional)
-* Relative line numbers (optional)
-* Vim-mode (optional)
-* Whitespaces cleaning (optional)
+
+### Switched off by deafult
+
+* Line numbers
+* Relative line numbers
+* Vim-mode
+* Whitespaces cleaning
 
 ## Installation
 
