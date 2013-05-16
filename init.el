@@ -26,6 +26,7 @@
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; PLUGINS
+ (autoload 'findr "findr" "Find file name." t)
 
 ;; Line numbers
 ;; (global-linum-mode t)
