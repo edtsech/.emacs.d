@@ -25,6 +25,8 @@ and ready to try Emacs as an editor primarelly for Clojure development or just t
 
 1. Download Emacs
   1. [Emacs for MacOS](http://emacsformacosx.com/)
+  2. Linux
+  3. Windows
 2. `git clone ... ~/.emacs.d`
 
 ## Usage
