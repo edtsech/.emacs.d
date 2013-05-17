@@ -70,11 +70,12 @@ Just use `tab` key.
 
 #### Indentation
 
-```
+``` clj
 ;; Set Compojure indentation
+;; (put <macro|function> 'clojure-backtracking-indent '(<indent-first-arg> <indent-second-arg> ...)
 (put 'GET 'clojure-backtracking-indent '(2 2 2))
-(put 'POST 'clojure-backtracking-indent '(4 4 2))
-(put 'PUT 'clojure-backtracking-indent '(4 4 2))
-(put 'DELETE 'clojure-backtracking-indent '(4 4 2))
-(put 'PATCH 'clojure-backtracking-indent '(4 4 2))
+(put 'POST 'clojure-backtracking-indent '(2 2 2))
+(put 'PUT 'clojure-backtracking-indent '(2 2 2))
+(put 'DELETE 'clojure-backtracking-indent '(2 2 2))
+(put 'PATCH 'clojure-backtracking-indent '(2 2 2))
 ```
