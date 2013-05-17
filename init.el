@@ -50,11 +50,6 @@
 (custom-set-variables '(hl-paren-colors (quote ("orange" "yellow" "greenyellow" "green" "springgreen" "cyan" "slateblue" "magenta" "purple"))))
 (add-hook 'clojure-mode-hook 'highlight-parentheses-mode)
 
-;; Midje-mode
-;; (require 'midje-mode)
-;; (add-hook 'clojure-mode-hook 'midje-mode)
-;; (add-hook 'clojure-mode-hook 'paredit-mode)
-
 ;; Nrepl
 (setenv "PATH" (concat (getenv "HOME") "/bin:" (getenv "PATH")))
 (setq exec-path (cons "~/bin" exec-path))
