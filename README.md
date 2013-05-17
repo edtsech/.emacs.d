@@ -13,6 +13,7 @@ and ready to try Emacs as an editor primarelly for Clojure development or just t
 * Parentheses highlighting
 * NREPL
 * Auto Completion
+* Lisp indentation
 
 ### Switched off by deafult
 
@@ -65,4 +66,15 @@ Just use `tab` key.
 
 [NREPL Keyboard shortcuts](https://github.com/kingtim/nrepl.el#keyboard-shortcuts)
 
-### Customization ??
+### Customize
+
+#### Indentation
+
+```
+;; Set Compojure indentation
+(put 'GET 'clojure-backtracking-indent '(2 2 2))
+(put 'POST 'clojure-backtracking-indent '(4 4 2))
+(put 'PUT 'clojure-backtracking-indent '(4 4 2))
+(put 'DELETE 'clojure-backtracking-indent '(4 4 2))
+(put 'PATCH 'clojure-backtracking-indent '(4 4 2))
+```
