@@ -56,4 +56,11 @@ Just use `tab` key.
 
 #### NREPL
 
+`M` - is meta key, can be redefined, but usually its Alt key 
+
+1. `C-c M-j` or `M-x nrepl-jack-in` - connect to nREPL
+2. `C-M-x` - evaluate the top level form
+
+[NREPL Keyboard shortcuts](https://github.com/kingtim/nrepl.el#keyboard-shortcuts)
+
 ### Customization ??
