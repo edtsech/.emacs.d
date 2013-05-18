@@ -1,8 +1,12 @@
 # Clojure Emacs Setup
 
-It's basic ~100 lines setup for Emacs beginners users.
+It's basic ~100 lines setup for Emacs beginners. 
 
 ![look](/image.png)
+
+## Goal
+
+Provide minimal user friendly setup for Clojure development.
 
 ## Features
 
@@ -29,6 +33,8 @@ It's basic ~100 lines setup for Emacs beginners users.
   2. Linux
   3. Windows
 2. `git clone ... ~/.emacs.d`
+
+If you need some help ping me on twitter([@edtsech](https://twitter.com/edtsech)) or send me an email.
 
 ## Usage
 
