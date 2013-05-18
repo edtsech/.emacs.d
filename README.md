@@ -1,12 +1,8 @@
 # Clojure Emacs Setup
 
-It's basic ~100 lines setup for Emacs beginners. 
+It's basic ~100 lines user friendly setup for Emacs beginners which provides comfortable Clojure development environment.
 
 ![look](/image.png)
-
-## Goal
-
-Provide minimal user friendly setup for Clojure development.
 
 ## Features
 
