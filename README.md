@@ -1,6 +1,6 @@
 # Clojure Emacs Setup
 
-It's basic ~100 lines setup for non Emacs users.
+It's basic ~100 lines setup for Emacs beginners users.
 
 ![look](/image.png)
 
