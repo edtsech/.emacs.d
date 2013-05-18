@@ -9,6 +9,7 @@ and ready to try Emacs as an editor primarelly for Clojure development or just t
 
 ### Active
 
+* Clojure mode
 * Paredit
 * Parentheses highlighting
 * NREPL
