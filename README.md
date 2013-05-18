@@ -15,7 +15,7 @@ It's basic ~100 lines user friendly setup for Emacs beginners which provides com
 * Auto Completion
 * Lisp indentation
 
-### Switched off by deafult
+### Off by deafult
 
 * Line numbers
 * Relative line numbers
