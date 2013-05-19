@@ -12,6 +12,7 @@
  '(tool-bar-mode nil)
  '(scroll-bar-mode nil))
 
+
 ;(global-linum-mode t)
 
 
@@ -106,6 +107,22 @@
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2)
 (setq-default truncate-lines t)
+
+;; Parenface
+;(require 'parenface)
+;(set-face-foreground 'paren-face "gray40")
+;(add-hook 'clojure-mode-hook (paren-face-add-support clojure-font-lock-keywords))
+
+(defface esk-paren-face
+   '((((class color) (background dark))
+      (:foreground "grey40"))
+     (((class color) (background light))
+      (:foreground "grey55")))
+   "Face used to dim parentheses."
+   :group 'starter-kit-faces)
+
+(font-lock-add-keywords 'clojure-mode
+                        '(("(\\|)" . 'esk-paren-face)))
 
 ;; WHITESPACES
 (require 'whitespace)
